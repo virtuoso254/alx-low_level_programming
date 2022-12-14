@@ -2,6 +2,7 @@
 
 /**
  * main - entry point
+ * print_alphabet_x10 - prints the alphabet
  * Return: 0
 */
 
