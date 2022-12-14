@@ -2,6 +2,7 @@
 
 /**
  * _islower _ returns the lowercase characters
+ * else, return 0
  * @c: returns character c
  * Return: 1 for lowercase and 0 for the rest
 */
