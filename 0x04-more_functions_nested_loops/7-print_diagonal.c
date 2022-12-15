@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_diagonal - draws the diagonal
- * @n: takes an integer
+ * print_diagonal - draws a diagonal line
+ * @n: takes in an integer
  */
 
 void print_diagonal(int n)
@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		{
 			if (i == j)
 			{
-				_putchar('\n');
+				_putchar('\\');
 				_putchar('\n');
 			}
 			else
