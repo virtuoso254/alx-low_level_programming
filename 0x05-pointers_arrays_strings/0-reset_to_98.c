@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * reset_to_98 - takes the number and updates its value
- * @n: integer checked
- * Return: nil return
+ * reset_to_98 - updates n to 98
+ * @n: value updated
+ * Return: n
  */
 
 void reset_to_98(int *n)
 {
-	*n = 98;
+	*n = 98
 }
