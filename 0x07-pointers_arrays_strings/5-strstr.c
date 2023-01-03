@@ -1,23 +1,34 @@
 #include "main.h"
 
 /**
- * _strpbrk - searches the string
- * @s: first string
- * @accept: second
- * Return: pointer to the string
+ * _strstr - function that locates string
+ * @haystack:string location
+ * * @needle: substring
+ * Return: pointer to string
  */
 
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	unsigned int i, j;
+	char *h = haystack;
+	char *n = needle;
 
-	for (i = 0; *(s + i) != '\0'; i++)
+	while (*h)
 	{
-		for (j = 0; *(accept + j) != '\0'; j++)
+		n = needle;
+		h = haystack;
+		while (*n)
 		{
-			if (*(s + i) == *(accept + j))
-				return (s + i);
+			if (*h == *n)
+			{
+				n++;
+				h++;
+			}
+			else
+				break;
 		}
+		if (*n == '\0')
+			return (haystack);
+		haystack++;
 	}
-	return ('\0');
+	return (0);
 }
