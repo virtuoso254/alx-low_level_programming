@@ -1,16 +1,31 @@
+#include "main.h"
+
 /**
- * _memcpy - copies memory area
- * @dest: buffer copied
- * @src: item to be copied
- * @n: memory space
- * Return: always 0
+ * _strspn - function that prints
+ * length of prefix
+ * @s: the string
+ * @accept: prefix to be measured
+ * Return: bytes number
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i;
+	unsigned int bytes = 0;
+	int index;
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
-	return (dest);
+	while (*s)
+	{
+		for (index = 0; accept[index]; index++)
+		{
+			if (*s == accept[index])
+			{
+				bytes++;
+				break;
+			}
+			else if (accept[index + 1] == '\0')
+				return (bytes);
+		}
+		s++;
+	}
+	return (bytes);
 }
