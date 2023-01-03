@@ -5,7 +5,7 @@
  * *_strchr - function for character location
  * @s: searched string
  * @c: character to be found
- * Return: pointer 
+ * Return: pointer
  */
 
 char *_strchr(char *s, char c)
