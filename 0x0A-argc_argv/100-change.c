@@ -5,7 +5,8 @@
  * main - prints number of coins
  * @argc: argument count
  * @argv: argument list
- * Return: 0 on success
+ * Return: 1 if the number is not one
+ * otherwise 0
  */
 
 int main(int argc, char *argv[])
