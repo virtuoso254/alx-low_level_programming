@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * print_dog - outputs the dog
- * @d: pointer
- * Return: void
+ * print_dog - prints struct dog
+ * @d: pointer 
+ * Return: nothing
  */
 
 void print_dog(struct dog *d)
@@ -25,13 +25,14 @@ void print_dog(struct dog *d)
 			printf("Name: (nil)\n");
 		}
 		printf("Age: %f\n", d->age);
+
 		if (d->owner != NULL)
 		{
 			printf("Owner: %s\n", d->owner);
 		}
 		else
 		{
-			printf("Owner: %s\n", d->owner);
+			printf("Owner: (nil)\n");
 		}
 	}
 }
